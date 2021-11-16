@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<meta charset ="UTF-8">
+</head>
+<BODY>
+<script>
+var i, positivos = 0, negativos , numd, media, nump = 0, num = 20;
+for (i = 0; i < num; i++){
+    numd = prompt("Digite um número inteiro:");
+    if (numd > 0){
+        positivos += parseInt(numd);
+        nump++;
+    } else{
+        negativos += "\n" + numd;
+    }
+}
+media = positivos / nump
+alert("A média dos números que são positivos é: " + media + " , já os números negativos são " + negativos);
+</script>
+</body>
+</html>

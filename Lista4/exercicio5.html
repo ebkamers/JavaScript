@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<meta charset ="UTF-8">
+</head>
+<BODY>
+<script>
+var num, num_neg = 0, num_int;
+num = prompt("Digite quantos valores você quer ler:");
+for(var i = 1; i <= num; i++){
+    num_int = prompt("Agora escreva cada valor:");
+    if (num_int < 0){
+        num_neg++;
+    }
+}
+alert("De todos os valores digitados "+ num_neg + " seram aqueles negativos");
+</script>
+</body>
+</html>
